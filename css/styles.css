@@ -135,3 +135,11 @@ body {
     background-color: rgb(175, 239, 182);
     color: rgb(0, 0, 0);
 }
+
+.upg {
+    color: aliceblue;
+    border-color: aliceblue;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+}
