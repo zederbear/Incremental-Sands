@@ -138,9 +138,11 @@ body {
 
 .upg {
     color: aliceblue;
+    align-items: center;
     border-color: aliceblue;
     border-style: solid;
     width: 50%;
+    margin-top: 50px;
     border-radius: 5px;
     border-width: 2px;
     padding-left: 5%; padding-right: 5%;
