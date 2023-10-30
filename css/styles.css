@@ -138,7 +138,7 @@ body {
 
 .upg {
     color: aliceblue;
-    display: grid;
+    display: flex;
     justify-content: center;
     border-color: aliceblue;
     border-style: solid;
