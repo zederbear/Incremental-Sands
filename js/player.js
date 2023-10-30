@@ -2,7 +2,7 @@
 var player = {
     sand: 0,
     gold: 0,
-    goldChance: 0.25,
+    goldChance: 25,
     buyMax: false,
     efficiency: [],
     goldEfficiency: [],
