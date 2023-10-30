@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Incremental Sands</title>
+</head>
+<body>
+    <div id="app">
+        <div class="currency-container">
+            <div class="currency">
+                <span id="sand-word">Sand </span><span class="currency-stat">{{ format(player.sand) }}</span>
+            </div>
+            <div class="currency">
+                <span id="gold-word">Gold </span><span class="currency-stat">{{ format(player.gold) }}</span>
+            </div>
+        </div>
+        <div id="right-side-of-screen">
+            <div id="button-containers-container">
+                <div id="settings-buttons-container">
+                    <span id="save-button" class="button">Save</span>
+                    <span id="import-button" class="button">Import</span>
+                    <span id="export-button" class="button">Export</span>
+                    <span id="buy-amount-button" class="button">Buy 1x</span>
+                    <span id="buy-max-button" class="button">Buy Max</span>
+                    <span id="help-button" class="button">Help!</span>
+                    <span id="settings-button" class="button">Settings</span>
+                    <span id="reset-button" class="button">Reset</span>
+                </div>
+                <div id="screen-areas-buttons-container">
+                    <span id="digging-button" class="button">Digging</span>
+                </div>
+            </div>
+            <div id="possible-drops" class="button">
+                Hover For Drop Chance
+                <div id="digging-drops">
+                    <p class="drop"><span id="sand-word">sand</span><span id="sand-chance" class="chances">100%</span></p>
+                    <p class="drop"><span id="gold-word">gold </span><span id="gold-chance" class="chances">25%</span></p>
+                </div>
+            </div>
+            <div id="efficiency-button" class="upg-button">Efficiency [ {{ format(efficiency.bought) }/{ format(efficiency.amount) }} ]</div>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/player.js"></script>
+<script src="js/format.js"></script>
+<script src="js/loop.js"></script>
+<script src="js/format.js"></script>
+<script src="js/index.js"></script>
+<script src="js/clickbehavior.js"></script>
+</html>
