@@ -140,6 +140,8 @@ body {
     color: aliceblue;
     border-color: aliceblue;
     border-style: solid;
+    width: 50%;
     border-radius: 5px;
     border-width: 2px;
+    padding-left: 5%; padding-right: 5%;
 }
