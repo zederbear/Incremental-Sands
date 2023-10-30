@@ -16,7 +16,7 @@ var firstEfficiency = {
     bought: 500,
 }
 
-var goldEfficiency = {
+var firstGoldEfficiency = {
     cost: 100,
     mult: 1,
     amount: 1,
@@ -24,3 +24,4 @@ var goldEfficiency = {
 }
   
 player.efficiency.push(firstEfficiency)
+player.goldEfficiency.push(firstGoldEfficiency)
