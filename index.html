@@ -39,7 +39,9 @@
                     <p class="drop"><span id="gold-word">gold </span><span id="gold-chance" class="chances">25%</span></p>
                 </div>
             </div>
-            
+            <div id="efficiency-upg" v-for="(efficiency, idx) in player.efficiency">
+                <span>Efficiency</span><span>{{ efficiency.amount }}/{{ efficiency.bought }}</span>
+            </div>
         </div>
     </div>
 </body>
