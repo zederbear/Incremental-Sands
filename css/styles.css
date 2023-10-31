@@ -167,6 +167,7 @@ span, p, h1, h2, h3, h4, h5, h6 {
     border-width: 2px;
     border-style: solid;
     height: auto;
+    margin-top: 30px;
 }
 
 #efficiency-upg:hover #efficiency-cost {
