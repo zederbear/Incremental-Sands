@@ -36,7 +36,7 @@
                 Hover For Drop Chance
                 <div id="digging-drops">
                     <p class="drop"><span id="sand-word">sand</span><span id="sand-chance" class="chances">100%</span></p>
-                    <p class="drop"><span id="gold-word">gold </span><span id="gold-chance" class="chances" v-for="(goldEfficiency, idx) in player.goldEfficiency">1/{{ format(goldEfficiency.chance)</span></p>
+                    <p class="drop"><span id="gold-word">gold </span><span id="gold-chance" class="chances" v-for="(goldEfficiency, idx) in player.goldEfficiency">1/{{ format(goldEfficiency.chance) }}</span></p>
                 </div>
             </div>
             <div id="efficiency-upg" class="upg" v-for="(efficiency, idx) in player.efficiency" @click="buyMarketingGenerator(idx)">
