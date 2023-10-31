@@ -40,11 +40,11 @@
                 </div>
             </div>
             <div id="efficiency-upg" class="upg" v-for="(efficiency, idx) in player.efficiency" @click="buyMarketingGenerator(idx)">
-                <span>Efficiency</span><span>[{{ efficiency.amount }}/{{ efficiency.bought }}]</span>
+                <span>Efficiency</span><span>[{{ format(efficiency.amount) }}/{{ efficiency.bought }}]</span>
                 <div id="efficiency-cost"><p>Cost <span id="sand-word">Sand</span><span class="currency-stat">{{ format(efficiency.cost) }}</span></p></div>
             </div>
             <div id="gold-efficiency-upg" class="upg" v-for="(goldEfficiency, idx) in player.goldEfficiency" @click="buyGoldFinder(idx)">
-                <span>Gold Efficiency</span><span>[{{ goldEfficiency.amount }}/{{ goldEfficiency.bought }}</span>
+                <span>Gold Efficiency</span><span>[{{ format(goldEfficiency.amount) }}/{{ goldEfficiency.bought }}</span>
                 <div id="gold-efficiency-cost">Cost <span id="gold-word">Gold</span><span class="currency-stat">{{ format(goldEfficiency.cost) }}</span></div>
             </div>
         </div>
