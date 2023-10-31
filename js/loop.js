@@ -4,7 +4,7 @@ function gameLoop(that) {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max)
   }
-  if (getRandomInt(that.player.goldChance) == 0) {
+  if (getRandomInt(that.player.goldEfficiency[0].chance) == 0) {
     that.player.gold += that.player.goldEfficiency[0].amount * that.player.goldEfficiency[0].mult * diff
   }
 

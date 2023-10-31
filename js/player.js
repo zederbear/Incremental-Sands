@@ -2,7 +2,7 @@
 var player = {
     sand: 0,
     gold: 0,
-    goldChance: 25,
+    globalChance: 1,
     buyMax: false,
     efficiency: [],
     goldEfficiency: [],
@@ -21,6 +21,7 @@ var firstGoldEfficiency = {
     mult: 1,
     amount: 1,
     bought: 500,
+    chance: 4
 }
   
 player.efficiency.push(firstEfficiency)
