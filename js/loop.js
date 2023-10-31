@@ -7,6 +7,6 @@ function gameLoop(that) {
   if (getRandomInt(that.player.goldEfficiency[0].chance) == 0) {
     that.player.gold += that.player.goldEfficiency[0].amount * that.player.goldEfficiency[0].mult * diff
   }
-
+  that.player.efficiency[0].amount += (that.player.gold/1000)
   that.player.lastUpdate = Date.now()
 }
