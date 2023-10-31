@@ -162,13 +162,10 @@ span, p, h1, h2, h3, h4, h5, h6 {
 #efficiency-cost {
     position: absolute;
     display: none;
-    justify-content: space-between;
-    align-items: center;
     border-radius: 3px;
     border-color: aliceblue;
     border-width: 2px;
     border-style: solid;
-    padding-left: 5px; padding-right: 5px;
     height: 10%;
 }
 
