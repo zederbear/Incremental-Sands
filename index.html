@@ -44,7 +44,7 @@
                 <div id="efficiency-cost"><p>Cost <span id="sand-word">Sand</span><span class="currency-stat">{{ format(efficiency.cost) }}</span></p></div>
             </div>
             <div id="gold-efficiency-upg" class="upg" v-for="(goldEfficiency, idx) in player.goldEfficiency" @click="buyGoldFinder(idx)">
-                <span>Gold Efficiency</span><span>[{{ (Math.round((format(goldEfficiency.amount))*100))/100 }}/{{ goldEfficiency.bought }}</span>
+                <span>Gold Efficiency</span><span>[{{ (Math.round((format(goldEfficiency.amount))*100))/100 }}/{{ goldEfficiency.bought }}]</span>
                 <div id="gold-efficiency-cost">Cost <span id="gold-word">Gold</span><span class="currency-stat">{{ format(goldEfficiency.cost) }}</span></div>
             </div>
         </div>
