@@ -174,3 +174,14 @@ span, p, h1, h2, h3, h4, h5, h6 {
 #efficiency-upg:hover #efficiency-cost {
     display: block;
 }
+
+#gold-efficiency-cost {
+    position: absolute;
+    display: none;
+    border-radius: 3px;
+    border-color: aliceblue;
+    border-width: 2px;
+    border-style: solid;
+    height: auto;
+    margin-top: 30px;
+}
