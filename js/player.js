@@ -22,7 +22,7 @@ var firstGoldEfficiency = {
     amount: 1,
     bought: 0,
     chance: 40,
-    chanceRep: (Math.round((1/this.chance)*10000))/100
+    chanceRep: (Math.round((1/(this.firstGoldEfficiency.chance))*10000))/100
 }
   
 player.efficiency.push(firstEfficiency)
