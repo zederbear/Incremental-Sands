@@ -41,6 +41,7 @@
             </div>
             <div id="efficiency-upg" class="upg" v-for="(efficiency, idx) in player.efficiency">
                 <span>Efficiency</span><span> </span><span>[{{ efficiency.amount }}/{{ efficiency.bought }}]</span>
+                <div id="efficiency-cost"><p>Cost <span id="sand-word">Sand</span><span class="currency-stat">{{ efficiency.cost }}</span></p></div>
             </div>
         </div>
     </div>
