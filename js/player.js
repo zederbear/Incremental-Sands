@@ -13,15 +13,16 @@ var firstEfficiency = {
     cost: 10,
     mult: 1,
     amount: 1,
-    bought: 500,
+    bought: 0,
 }
 
 var firstGoldEfficiency = {
     cost: 100,
     mult: 1,
     amount: 1,
-    bought: 500,
-    chance: 4
+    bought: 0,
+    chance: 40,
+    chanceRep: (Math.round((1/this.chance)*10000))/100
 }
   
 player.efficiency.push(firstEfficiency)
