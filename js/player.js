@@ -17,7 +17,7 @@ var firstEfficiency = {
 }
 
 var firstGoldEfficiency = {
-    cost: 100,
+    cost: 10,
     mult: 1,
     amount: 1,
     bought: 0,
