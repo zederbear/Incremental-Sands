@@ -15,6 +15,9 @@
             <div class="currency">
                 <span id="gold-word">Gold </span><span class="currency-stat">{{ format(player.gold) }}</span>
             </div>
+            <div class="currency">
+                <span id="iron-word">Iron </span><span class="currency-stat">{{ format(player.gold) }}</span>
+            </div>
         </div>
         <div id="right-side-of-screen">
             <div id="button-containers-container">
@@ -36,11 +39,16 @@
                 Hover For Drop Chance
                 <div id="digging-drops">
                     <p class="drop"><span id="sand-word">sand</span><span id="sand-chance" class="chances">100%</span></p>
-                    <p class="drop"><span id="gold-word">gold </span><span id="gold-chance" class="chances">25%</span></p>
+                    <p class="drop"><span id="gold-word">gold </span><span id="gold-chance" class="chances" v-for="(goldEfficiency, idx) in player.goldEfficiency">1/{{ format(goldEfficiency.chance) }}</span></p>
                 </div>
             </div>
-            <div id="efficiency-upg" v-for="(efficiency, idx) in player.efficiency">
-                <span>Efficiency</span><span>{{ efficiency.amount }}/{{ efficiency.bought }}</span>
+            <div id="efficiency-upg" class="upg" v-for="(efficiency, idx) in player.efficiency" @click="buyMarketingGenerator(idx)">
+                <span>Efficiency</span><span>[{{ Math.round(format(efficiency.amount))}}/{{ efficiency.bought }}]</span>
+                <div id="efficiency-cost"><p>Cost <span id="sand-word">Sand</span><span class="currency-stat">{{ format(efficiency.cost) }}</span></p></div>
+            </div>
+            <div id="gold-efficiency-upg" class="upg" v-for="(goldEfficiency, idx) in player.goldEfficiency" @click="buyGoldFinder(idx)">
+                <span>Gold Efficiency</span><span>[{{ Math.round(format(goldEfficiency.amount)) }}/{{ goldEfficiency.bought }}]</span>
+                <div id="gold-efficiency-cost">Cost <span id="gold-word">Gold</span><span class="currency-stat">{{ format(goldEfficiency.cost) }}</span></div>
             </div>
         </div>
     </div>
